@@ -1,0 +1,480 @@
+/* COLORS */
+/* LIGHT BLUE: #51899D */
+/* DARK BLUE: #204459 */
+/* RED: #CE4544 */
+
+/* font-family: "Karla", sans-serif; */
+/* font-family: "PT Serif Caption", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=PT+Serif+Caption&display=swap");
+
+/* Body Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.banner-image{
+  width: 100%;
+  height: auto;
+}
+
+#elem1 {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  margin-top: -30px;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+}
+
+
+#elem1 > a, a:visited, a:hover, a:active, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inner_element {
+  color: white;
+}
+
+.fa-angle-right {
+  padding-left: 1em;
+}
+
+.bio {
+  background-color: #51899d;
+  width: 20%;
+}
+
+.koval-cares {
+  background-color: #204459;
+  width: 20%;
+}
+
+.involved {
+  background-color: #ce4544;
+  width: 20%;
+}
+
+.social {
+  background-color: #3b5998;
+  width: 50px;
+  margin-left: auto;
+}
+
+/* Donate Section */
+
+.donate{
+  background: url('images/cityhall.jpg');
+  box-shadow: inset 0 0 0 100vmax rgba(206, 69, 68, .8);
+  background-color: #204459; /* color while picture is loading */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 325px;
+  padding-top: 30px;
+  margin-top: -30px;
+  padding-bottom: 60px;
+}
+
+.donate-head {
+  font-family: "PT Serif Caption", serif;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.donate-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.donate-button {
+  background: none;
+  border: 2px solid #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  transition-duration: .5s;
+  cursor: pointer;
+  margin: 1%;
+}
+
+.donate-button:hover{
+    background-color: white;
+    color: #204459;
+}
+/* Meet Chris */
+
+.koval-head {
+    font-family: "PT Serif Caption", serif;
+    font-size: 50px;
+    text-align: left;
+    color: #51889d;
+    margin: 0;
+  }
+
+.koval{
+    margin: auto;
+    width: 100%;
+    max-height: 800px;
+}
+
+.koval-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.koval-text{    
+    font-family: "Karla", sans-serif;
+    color: #204459;  
+    padding: 0 5%;
+}
+
+
+.koval-text-header{
+    font-family: "PT Serif Caption", serif;
+    font-size: 20px;  
+}
+
+
+/* COUNTDOWN */
+
+.countdown{
+  background-color: #ce4544;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+
+}
+
+.countdown-container{
+  margin: auto;
+}
+
+.countdown-container > h2 {
+  font-family: "Karla", sans-serif;
+  color: white;  
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 0.5;
+}
+
+.countdown-button > h2 {
+  font-family: "Karla", sans-serif;
+  color: white;  
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 0.5;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  font-family: "Karla", sans-serif;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 3.5rem;
+}
+
+.countdown-button{
+  margin: 0 auto;
+}
+
+.register-button {
+  background: none;
+  border: 2px solid #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  transition-duration: .5s;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.register-button:hover{
+    background-color: white;
+    color: #204459;
+}
+
+
+/* KOVAL CARES */
+.chris-cares{
+  background-image:linear-gradient(to right, #204559 , #51899D);
+  min-height: 325px;
+  padding: 60px 0;
+}
+
+.koval-cares-logo{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.koval-cares-logo > img {
+  width: 25%;
+}
+
+.slider {
+  width: 70%;
+  margin: 60px auto
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.chris-cares-subtext{
+  width: 70%;
+  margin: auto;
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+.support{
+  background: url('images/miramar_aerial.jpg');
+  box-shadow: inset 0 0 0 100vmax rgba(255, 255, 255, .8);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  min-height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+}
+
+.support-button {
+  background: none;
+  border: 2px solid #204559;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  color: #204559;
+  font-weight: bold;
+  transition-duration: .5s;
+  cursor: pointer;
+  margin: 1%;
+}
+
+.support-button:hover{
+    background-color:#204559;
+    color: white;
+}
+
+.support-header{
+  font-family: "PT Serif Caption", serif;
+  color: #51899d;
+  font-size: 50px !important;
+  padding: 0 100px;
+} 
+
+.contact-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 325px;
+
+}
+
+.contact-form {
+  color: #51899D;
+  font-family: "Karla", sans-serif;
+}
+.form-container{
+  width: 40%;
+  margin: auto;
+
+}
+
+.form-head{
+  font-family: "PT Serif Caption", serif;
+  color: #51899D;
+  font-size: 50px;
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  background: none;
+  border-width:0px;
+  border:none;
+  color: #000;
+  padding: 12px;  
+  border-bottom: 2px solid #51899D; 
+  box-sizing: border-box; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+input[type=submit] {
+  background: none;
+  border: 2px solid #51899D;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  color:#51899D;
+  font-weight: bold;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #51899D;
+  color:#fff;
+}
+
+.bottom-border{
+  display: flex;
+  padding-top: 60px;
+}
+
+
+.dark_blue{
+  height: 10px;
+  width: 33.33%;
+  background-color: #204459;
+}
+
+.light_blue{
+  height: 10px;
+  width: 33.33%;
+
+  background-color: #51899D;
+}
+
+.red{
+  height: 10px;
+  width: 33.33%;
+  background-color: #ce4544;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer > img {
+  width: 14%;
+}
+
+.footer-message {
+  border: 2px solid #204559;
+  padding: 10px;
+  font-size: .75em;
+  font-family: "Karla", sans-serif;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1190px) {
+  .koval-flex{
+    flex-direction: column-reverse;
+  }
+  
+  .koval-text {
+    padding: 60px 17%;
+  }
+
+  .koval{
+    max-height: none;
+  }
+
+  .koval-head{
+    text-align: center;
+  }
+
+  .support{
+    flex-direction: column;
+  }
+
+  .support-buttons{
+    padding-bottom: 60px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1190px) {
+  .support-buttons{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .countdown{
+    flex-direction: column;
+  }
+  .support-buttons{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+ .koval-image > img {
+   width: 600px;
+ }
+ .support-buttons{
+  width: 100%;
+}
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  .row{
+    flex-direction: column;
+  }
+
+ }
+
+@media only screen and (max-width: 615px) {
+  .koval-image > img {
+    width: 400px;
+  }
+ }
