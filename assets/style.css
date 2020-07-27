@@ -9,6 +9,10 @@
 
 /* Body Styles */
 
+html{
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +30,10 @@ body {
   height: auto;
 }
 
+.bannermobile-image{
+  display: none;
+}
+
 #elem1 {
   display: flex;
   height: 50px;
@@ -38,7 +46,7 @@ body {
 
 #elem1 > a, a:visited, a:hover, a:active, a:link {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .inner_element {
@@ -48,6 +56,7 @@ body {
 .fa-angle-right {
   padding-left: 1em;
 }
+
 
 .bio {
   background-color: #51899d;
@@ -81,12 +90,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   min-height: 325px;
   padding-top: 30px;
   margin-top: -30px;
-  padding-bottom: 60px;
 }
 
 .donate-head {
@@ -94,6 +102,7 @@ body {
   color: #fff;
   font-size: 50px;
   text-align: center;
+  padding: 0 100px;
 }
 
 
@@ -101,13 +110,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
 }
 
+
+
 .donate-button {
-  background: none;
   border: 2px solid #fff;
+  text-align: center;
   font-family: "Karla", sans-serif;
   font-size: 16px;
   padding: 10px;
@@ -177,7 +188,6 @@ body {
   color: white;  
   text-align: center;
   font-size: 1.3em;
-  line-height: 0.5;
 }
 
 .countdown-button > h2 {
@@ -185,7 +195,7 @@ body {
   color: white;  
   text-align: center;
   font-size: 2.5em;
-  line-height: 0.5;
+
 }
 
 li {
@@ -206,9 +216,17 @@ li span {
   margin: 0 auto;
 }
 
+.register-buttons{
+  display: flex;
+  flex-direction: row;
+;
+
+}
+
 .register-button {
   background: none;
   border: 2px solid #fff;
+  text-align: center;
   font-family: "Karla", sans-serif;
   font-size: 16px;
   padding: 10px;
@@ -217,7 +235,7 @@ li span {
   font-weight: bold;
   transition-duration: .5s;
   cursor: pointer;
-  margin: 25px;
+  margin: 1% auto;
 }
 
 .register-button:hover{
@@ -239,22 +257,46 @@ li span {
   padding-bottom: 60px;
 }
 
-.koval-cares-logo > img {
-  width: 25%;
+.covid{
+  width: auto;
+  text-align: center;
+  padding: 3% 0;
+
+}
+.covid-button{
+  background: #fcbd3a;
+  border: 2px solid #fff;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  width: 200px;
+  color: #000 !important;
+  font-weight: bold;
+  transition-duration: .5s;
+  cursor: pointer;
+  margin: 1% auto;
 }
 
-.slider {
+
+
+
+ .slider {
   width: 70%;
   margin: 60px auto
 }
 
 .slick-slide {
     margin: 0px 20px;
+
+
 }
 
 .slick-slide img {
-width: 100%;
-}
+  display: block;
+  width: 100%;
+  height: auto;
+} 
 
 .chris-cares-subtext{
   width: 70%;
@@ -280,17 +322,17 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 40%;
+  width: 30%;
 }
 
 .support-button {
-  background: none;
   border: 2px solid #204559;
+  text-align: center;
   font-family: "Karla", sans-serif;
   font-size: 16px;
   padding: 10px;
   width: 200px;
-  color: #204559;
+  color: #204559 !important;
   font-weight: bold;
   transition-duration: .5s;
   cursor: pointer;
@@ -299,7 +341,7 @@ width: 100%;
 
 .support-button:hover{
     background-color:#204559;
-    color: white;
+    color: white !important;
 }
 
 .support-header{
@@ -334,7 +376,7 @@ width: 100%;
   text-align: center;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email], input[type=tel]{
   width: 100%; 
   background: none;
   border-width:0px;
@@ -410,7 +452,28 @@ input[type=submit]:hover {
   font-family: "Karla", sans-serif;
 }
 
+
+
 /* RESPONSIVE */
+@media only screen and (max-width: 2128px) {
+  .support-buttons{
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1825px) {
+  .support-buttons{
+    width: 45%;
+  }
+} 
+
+
+@media only screen and (max-width: 1430px) {
+  .support-buttons{
+    width: 50%;
+  }
+}
+
 
 @media only screen and (max-width: 1190px) {
   .koval-flex{
@@ -427,6 +490,10 @@ input[type=submit]:hover {
 
   .koval-head{
     text-align: center;
+  }
+
+  .donate {
+    flex-direction: column;
   }
 
   .support{
@@ -453,6 +520,12 @@ input[type=submit]:hover {
   .support-buttons{
     width: 80%;
   }
+  .koval-text {
+    padding: 60px 10%;
+  }
+  .covid{
+    padding: 5%;
+  }
 }
 
 @media only screen and (max-width: 815px) {
@@ -462,7 +535,22 @@ input[type=submit]:hover {
  .support-buttons{
   width: 100%;
 }
+
+
 }
+
+
+@media only screen and (max-width: 768px) {
+  .banner-image{
+    display: none;
+  }
+  .bannermobile-image{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+ }
 
 
 
@@ -471,10 +559,76 @@ input[type=submit]:hover {
     flex-direction: column;
   }
 
- }
+  .koval-text {
+    padding: 60px 5%;
+  }
+  .koval-cares-logo > img{
+    width: 95%;
+  }
+
+  .bio {
+    width: 30%;
+  }
+  
+  .koval-cares {
+    width: 30%;
+  }
+  
+  .involved {
+    width: 30%;
+  }
+}
 
 @media only screen and (max-width: 615px) {
   .koval-image > img {
+    width: 500px;
+  }
+ }
+
+ @media only screen and (max-width: 563px) {
+  .countdown-button {
+    text-align: center;
+  }
+ }
+
+ @media only screen and (max-width: 524px) {
+  .timer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+ }
+
+ @media only screen and (max-width: 500px) {
+  .koval-image > img {
     width: 400px;
+  }
+ }
+
+ @media only screen and (max-width: 484px) {
+  .timer {
+    width: 70%;
+ }
+
+ .register-buttons{
+   flex-direction: column;
+ }
+
+ .register-button{
+   margin: 5% auto;
+ }
+
+ .covid{
+   padding: 10% 0;
+ }
+
+ .covid-button{
+   font-size: 18px;
+ }
+ 
+ @media only screen and (max-width: 400px) {
+  .koval-image > img {
+    width: 310px;
   }
  }

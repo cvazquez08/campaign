@@ -1,8 +1,21 @@
 $(".variable").slick({
   dots: true,
   infinite: true,
+  speed: 300,
   variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 400,
+      settings: {
+        dots: false,
+        mobileFirst: true
+      }
+    }
+  ]
+
 });
+
+
 
 const second = 1000,
       minute = second * 60,

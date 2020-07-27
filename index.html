@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/images/Favicon-01.png">
+    <title>Koval Cares</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,39 +20,39 @@
   <body>
 
     <div class="header-section">
-      <!-- <div class="logo"><img src="assets/images/koval_logo.png" alt="Koval Logo"></div>
-      <div class="main-image"></div> -->
       <img class="banner-image" src="assets/images/WebBanner_med-01.png" alt="banner">
+      <img class="bannermobile-image" src="assets/images/Mobile Banner.png" alt="banner">
+
  
     </div>
 
     <div id="elem1">
       <div class="inner_element bio">
-        <a href="#bio"><p>Bio<i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+        <a href="#bio"><p>Bio</p></a>
       </div>
       <div class="inner_element koval-cares">
-        <a href="#kovalcares"><p>Koval Cares<i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+        <a href="#kovalcares"><p>Koval Cares</p></a>
       </div>
       <div class="inner_element involved">
-       <a href="#involved"><p>Get Involved<i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+       <a href="#involved"><p>Get Involved</p></a>
       </div>
 
       <div class="inner_element social">
-        <p><i class="fa fa-facebook-official" aria-hidden="true"></i></p>
+        <p><a href="https://www.facebook.com/kovalcares" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
       </div>
     </div>
 
-    <section class="donate">
+    <div class="donate">
       <h1 class="donate-head">Donate</h1>
-      <div class="donate-buttons">
-        <button class="donate-button">$20</button>
-        <button class="donate-button">$50</button>
-        <button class="donate-button">$100</button>
-        <button class="donate-button">$250</button>
-        <button class="donate-button">$500</button>
-        <button class="donate-button">Another Amount</button>
+      <div class="support-buttons">
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=20" target="_blank">$20</a>
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=50" target="_blank">$50</a>
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=100" target="_blank">$100</a>
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=250" target="_blank">$250</a>
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=500" target="_blank">$500</a>
+        <a class="donate-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate" target="_blank">Another Amount</a>
       </div>
-    </section>
+    </div>
 
     <section class="koval" id="bio">
       <div class="koval-flex">
@@ -85,10 +86,10 @@
     <section class="countdown">
 
       <div class="countdown-container">
-        <h2>Days left until Maxwell Chambers is </h2>
-        <h2>no longer Vice Mayor of Miramar and </h2>
-        <h2>Chris Koval is elected to Commission Seat #1</h2>
-        <ul>
+        <h2>Days left until Maxwell Chambers is <br>
+        no longer Vice Mayor of Miramar and<br>
+        Chris Koval is elected to Commission Seat #1</h2>
+        <ul class="timer">
           <li><span id="days"></span>days</li>
           <li><span id="hours"></span>Hours</li>
           <li><span id="minutes"></span>Minutes</li>
@@ -98,8 +99,11 @@
 
       <div class="countdown-button">
         <h2>Vote Koval March 9, 2021</h2>
-        <button class="register-button">Register to vote now</button>
-        <button class="register-button">Register to vote by mail</button>
+        <div class="register-buttons">
+          <a href="https://www.browardsoe.org/Register-to-Vote/Voter-" target="_blank" class="register-button">Register to vote now</a>
+         <a href="https://www.browardsoe.org/" target="_blank" class="register-button">Register to vote by mail</a>
+        </div>
+
       </div>
       
     </section>
@@ -118,26 +122,19 @@
         and in the future. Chris can be the change; never leaving you out of the
         bigger picture. Why? Because Koval Cares.
       </p>
-      <section class="variable slider">
-        <div>
-          <img src="assets/images/image1.jpeg" />
-        </div>
-        <div>
-          <img src="assets/images/image2.jpeg" />
-        </div>
-        <div>
-          <img src="assets/images/image1.jpeg" />
-        </div>
-        <div>
-          <img src="assets/images/image1.jpeg" />
-        </div>
-        <div>
-          <img src="assets/images/image2.jpeg" />
-        </div>
-        <div>
-          <img src="assets/images/image1.jpeg" />
-        </div>
-      </section>
+
+      <div class="covid">
+        <a href="https://miramarfl.gov/1695/Coronavirus-Update" target="_blank" class="covid-button">Miramar COVID-19 Resources</a>
+      </div>
+      
+      <div class="variable slider">
+        <div><img src="assets/images/carousel/CityHall.jpg" /></div>
+        <div><img src="assets/images/carousel/Family.png" /></div>
+        <div><img src="assets/images/carousel/HollywoodCareer.jpeg" /></div>
+        <div><img src="assets/images//carousel/MiramarPaints.jpeg" /></div>
+        <div><img src="assets/images/carousel/PortraitMagazines.jpeg" /></div>
+      </div>
+
     </section>
 
   
@@ -145,12 +142,12 @@
     <div class="support">
       <h1 class="support-header">Support</h1>
       <div class="support-buttons">
-        <button class="support-button">$20</button>
-        <button class="support-button">$50</button>
-        <button class="support-button">$100</button>
-        <button class="support-button">$250</button>
-        <button class="support-button">$500</button>
-        <button class="support-button">Another Amount</button>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=20" target="_blank">$20</a>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=50" target="_blank">$50</a>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=100" target="_blank">$100</a>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=250" target="_blank">$250</a>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate?amount=500" target="_blank">$500</a>
+        <a class="support-button" href="https://secure.anedot.com/chris-koval-for-miramar-city-commission-seat-1/donate" target="_blank">Another Amount</a>
       </div>
     </div>
 
@@ -158,27 +155,31 @@
       <div><h1 class="form-head">Volunteer</h1></div>
       <div class="form-container">
 
-        <form action="action_page.php">
+        <form action="form.php" method="post">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="John" />
 
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Doe" />
 
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="John.doe@gmail.com" />
+          <label for="phonenumber">Phone Number</label>
+          <input type="tel" id="phone" name="phonenumber" placeholder="000-000-0000"/>
 
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="John.doe@gmail.com" />
 
           <label for="subject">Message</label>
           <textarea
             id="subject"
-            name="subject"
+            name="message"
             placeholder="I'm interested in helping by..*"
             style="height: 100px;"
           ></textarea>
 
           <input type="submit" value="Submit" />
+          
         </form>
+
 
       </div>
 
