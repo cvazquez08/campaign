@@ -9,81 +9,98 @@
 
 /* Body Styles */
 
-html{
+html {
   width: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-
 }
 
 * {
   box-sizing: border-box;
 }
 
+section:before {
+  height: 45px;
+  content: "";
+  display: block;
+}
+
+.koval:after {
+  height: 45px;
+  content: "";
+  display: block;
+}
+
+.form-container:before, .covid:before{
+  height: 50px;
+  content: "";
+  display: block;
+}
+
 /* Header */
 
-.banner-image{
+.banner-image {
   width: 100%;
   height: auto;
 }
 
-.bannermobile-image{
+.bannermobile-image {
   display: none;
 }
 
-#elem1 {
-  display: flex;
-  height: 50px;
-  width: 100%;
-  margin-top: -30px;
-  text-align: center;
+.navbar {
+  background-color: white !important;
   font-family: "Karla", sans-serif;
+  font-size: 16px;
 }
 
-
-#elem1 > a, a:visited, a:hover, a:active, a:link {
-  text-decoration: none;
-  color: white;
-}
-
-.inner_element {
-  color: white;
-}
-
-.fa-angle-right {
-  padding-left: 1em;
-}
-
-
-.bio {
+.nav-donate {
   background-color: #51899d;
-  width: 20%;
+  border: 1px solid #51899d;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  padding: 0px 30px;
+  color: white !important;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
-.koval-cares {
-  background-color: #204459;
-  width: 20%;
+.nav-donate:link,
+.nav-donate:visited {
+  text-decoration: none;
+  color: black;
 }
 
-.involved {
+.nav-donate:hover {
   background-color: #ce4544;
-  width: 20%;
+  border: #ce4544;
+  color: #fff !important;
+}
+
+.nav-item-donate {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .social {
-  background-color: #3b5998;
-  width: 50px;
-  margin-left: auto;
+  margin-top: 8px;
+  padding: 0 10px;
+}
+
+.fa {
+  color: #3b5998;
 }
 
 /* Donate Section */
 
-.donate{
-  background: url('images/cityhall.jpg');
-  box-shadow: inset 0 0 0 100vmax rgba(206, 69, 68, .8);
+.donate {
+  background: url("images/cityhall.jpg");
+  box-shadow: inset 0 0 0 100vmax rgba(206, 69, 68, 0.8);
   background-color: #204459; /* color while picture is loading */
   background-position: center center;
   background-repeat: no-repeat;
@@ -94,7 +111,6 @@ body {
   align-items: center;
   min-height: 325px;
   padding-top: 30px;
-  margin-top: -30px;
 }
 
 .donate-head {
@@ -105,16 +121,13 @@ body {
   padding: 0 100px;
 }
 
-
-.donate-buttons{
+.donate-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 40%;
   margin: 0 auto;
 }
-
-
 
 .donate-button {
   border: 2px solid #fff;
@@ -125,80 +138,82 @@ body {
   width: 200px;
   color: #fff;
   font-weight: bold;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
   margin: 1%;
 }
 
-.donate-button:hover{
-    background-color: white;
-    color: #204459;
+.donate-button:hover {
+  background-color: white;
+  color: #204459;
 }
+
 /* Meet Chris */
 
 .koval-head {
-    font-family: "PT Serif Caption", serif;
-    font-size: 50px;
-    text-align: left;
-    color: #51889d;
-    margin: 0;
-  }
-
-.koval{
-    margin: auto;
-    width: 100%;
-    max-height: 800px;
+  font-family: "PT Serif Caption", serif;
+  font-size: 50px;
+  text-align: left;
+  color: #51889d;
+  padding: 30px 0;
 }
 
-.koval-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.koval {
+  margin: auto;
+  width: 100%;
+  max-height: 900px;
 }
 
-.koval-text{    
-    font-family: "Karla", sans-serif;
-    color: #204459;  
-    padding: 0 5%;
+.koval-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
 }
 
-
-.koval-text-header{
-    font-family: "PT Serif Caption", serif;
-    font-size: 20px;  
+.koval-text {
+  font-family: "Karla", sans-serif;
+  color: #204459;
+  padding: 0 5%;
 }
 
+.koval-text-header {
+  font-family: "PT Serif Caption", serif;
+  font-size: 20px;
+}
+
+.koval-image img {
+  max-height: 700px;
+}
 
 /* COUNTDOWN */
 
-.countdown{
+.countdown {
   background-color: #ce4544;
   display: flex;
   align-items: center;
-  padding: 30px;
-
+  padding: 50px 30px 30px 30px;
 }
 
-.countdown-container{
+.countdown-container {
   margin: auto;
 }
 
 .countdown-container > h2 {
   font-family: "Karla", sans-serif;
-  color: white;  
+  color: white;
   text-align: center;
   font-size: 1.3em;
 }
 
 .countdown-button > h2 {
   font-family: "Karla", sans-serif;
-  color: white;  
+  color: white;
   text-align: center;
   font-size: 2.5em;
-
 }
 
-li {
+.timer > li {
   display: inline-block;
   color: white;
   font-family: "Karla", sans-serif;
@@ -207,20 +222,19 @@ li {
   text-transform: uppercase;
 }
 
-li span {
+.timer > li span {
   display: block;
   font-size: 3.5rem;
 }
 
-.countdown-button{
+.countdown-button {
   margin: 0 auto;
 }
 
-.register-buttons{
+.register-buttons {
   display: flex;
   flex-direction: row;
-;
-
+  margin: -3%;
 }
 
 .register-button {
@@ -230,95 +244,137 @@ li span {
   font-family: "Karla", sans-serif;
   font-size: 16px;
   padding: 10px;
-  width: 200px;
+  width: 225px;
   color: #fff;
   font-weight: bold;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
   margin: 1% auto;
 }
 
-.register-button:hover{
-    background-color: white;
-    color: #204459;
+.register-button:hover {
+  background-color: white;
+  color: #204459;
 }
 
-
 /* KOVAL CARES */
-.chris-cares{
-  background-image:linear-gradient(to right, #204559 , #51899D);
+.chris-cares {
+  background-image: linear-gradient(to right, #204559, #51899d);
   min-height: 325px;
   padding: 60px 0;
 }
 
-.koval-cares-logo{
-  display:flex;
-  justify-content: center;
-  padding-bottom: 60px;
-}
-
-.covid{
-  width: auto;
-  text-align: center;
-  padding: 3% 0;
-
-}
-.covid-button{
-  background: #fcbd3a;
-  border: 2px solid #fff;
-  text-align: center;
+.koval-cares-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-family: "Karla", sans-serif;
-  font-size: 25px;
-  padding: 10px;
-  width: 200px;
-  color: #000 !important;
-  font-weight: bold;
-  transition-duration: .5s;
-  cursor: pointer;
-  margin: 1% auto;
+  color: white;
+  margin: 0 10%;
 }
 
+.koval-cares-text {
+  width: 50%;
+  color: white;
+  padding: 0 2%;
+}
 
+.koval-cares-list {
+  width: 50%;
+  padding: 0 2%;
+}
 
+.koval-cares-list ul {
+  padding: 0;
+}
 
- .slider {
-  width: 70%;
-  margin: 60px auto
+.koval-cares-list-title {
+  font-family: "PT Serif Caption", serif;
+  color: white;
+  padding-bottom: 60px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.koval-cares-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.slider {
+  width: 80%;
+  margin: 60px auto;
+  position: relative;
 }
 
 .slick-slide {
-    margin: 0px 20px;
-
-
+  margin: 0px 20px;
+  text-align: center !important;
 }
 
 .slick-slide img {
   display: block;
   width: 100%;
   height: auto;
-} 
+}
 
-.chris-cares-subtext{
+.overlay {
+  font-family: "Karla", sans-serif;
+  padding-top: 140px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(1, 1, 1, 0.35);
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+a.slider-atag {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+a.slider-atag:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chris-cares-subtext {
   width: 70%;
   margin: auto;
   font-family: "Karla", sans-serif;
   color: white;
 }
 
-.support{
-  background: url('images/miramar_aerial.jpg');
-  box-shadow: inset 0 0 0 100vmax rgba(255, 255, 255, .8);
+.support {
+  background: url("images/miramar_aerial.jpg");
+  box-shadow: inset 0 0 0 100vmax rgba(255, 255, 255, 0.8);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  min-height: 250px;
+  min-height: 325px;
   justify-content: center;
   align-items: center;
 }
 
-.support-buttons{
+.support-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -334,107 +390,140 @@ li span {
   width: 200px;
   color: #204559 !important;
   font-weight: bold;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
   margin: 1%;
 }
 
-.support-button:hover{
-    background-color:#204559;
-    color: white !important;
+.support-button:hover {
+  background-color: #204559;
+  color: white !important;
 }
 
-.support-header{
+.support-header {
   font-family: "PT Serif Caption", serif;
   color: #51899d;
   font-size: 50px !important;
   padding: 0 100px;
-} 
+}
 
-.contact-form{
+.contact-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 325px;
-
 }
 
 .contact-form {
-  color: #51899D;
+  color: #51899d;
   font-family: "Karla", sans-serif;
 }
-.form-container{
-  width: 40%;
-  margin: auto;
 
+.form-flex {
+  display: flex;
 }
 
-.form-head{
+.covid {
+  background-color: #000;
+  width: 100%;
+}
+
+.covid-scroll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 1000px;
+  margin: auto;
+  width: 80%;
+  padding: 0 10%;
+}
+
+.covid-scroll img {
+  padding: 1%;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+.form-head {
   font-family: "PT Serif Caption", serif;
-  color: #51899D;
+  color: #51899d;
   font-size: 50px;
   text-align: center;
+  padding: 30px 0;
 }
 
-input[type=text], select, textarea, input[type=email], input[type=tel]{
-  width: 100%; 
+.form-head-covid {
+  font-family: "PT Serif Caption", serif;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
   background: none;
-  border-width:0px;
-  border:none;
+  border-width: 0px;
+  border: none;
   color: #000;
-  padding: 12px;  
-  border-bottom: 2px solid #51899D; 
-  box-sizing: border-box; 
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 12px;
+  border-bottom: 2px solid #51899d;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
-
-input[type=submit] {
+input[type="submit"] {
   background: none;
-  border: 2px solid #51899D;
+  border: 2px solid #51899d;
   font-family: "Karla", sans-serif;
   font-size: 16px;
   padding: 10px;
   width: 100%;
-  color:#51899D;
+  color: #51899d;
   font-weight: bold;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
-
-input[type=submit]:hover {
-  background-color: #51899D;
-  color:#fff;
+input[type="submit"]:hover {
+  background-color: #51899d;
+  color: #fff;
 }
 
-.bottom-border{
+.bottom-border {
   display: flex;
-  padding-top: 60px;
+  padding-top: 1px;
 }
 
-
-.dark_blue{
+.dark_blue {
   height: 10px;
   width: 33.33%;
   background-color: #204459;
 }
 
-.light_blue{
+.light_blue {
   height: 10px;
   width: 33.33%;
 
-  background-color: #51899D;
+  background-color: #51899d;
 }
 
-.red{
+.red {
   height: 10px;
   width: 33.33%;
   background-color: #ce4544;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,53 +531,55 @@ input[type=submit]:hover {
 }
 
 .footer > img {
-  width: 14%;
+  padding: 20px 0;
 }
 
 .footer-message {
-  border: 2px solid #204559;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  font-size: .75em;
+  font-size: 0.75em;
   font-family: "Karla", sans-serif;
+  text-align: center;
 }
 
-
+.footer-contact {
+  font-family: "Karla", sans-serif;
+  font-size: 22px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 2128px) {
-  .support-buttons{
+  .support-buttons {
     width: 35%;
   }
 }
 
 @media only screen and (max-width: 1825px) {
-  .support-buttons{
+  .support-buttons {
     width: 45%;
   }
-} 
-
+}
 
 @media only screen and (max-width: 1430px) {
-  .support-buttons{
+  .support-buttons {
     width: 50%;
   }
 }
 
-
 @media only screen and (max-width: 1190px) {
-  .koval-flex{
+  .koval-flex {
     flex-direction: column-reverse;
   }
-  
-  .koval-text {
-    padding: 60px 17%;
-  }
 
-  .koval{
+  .koval {
     max-height: none;
   }
 
-  .koval-head{
+  .koval-head {
     text-align: center;
   }
 
@@ -496,139 +587,127 @@ input[type=submit]:hover {
     flex-direction: column;
   }
 
-  .support{
+  .support {
     flex-direction: column;
   }
 
-  .support-buttons{
+  .support-buttons {
     padding-bottom: 60px;
   }
-
-
 }
 
 @media only screen and (max-width: 1190px) {
-  .support-buttons{
+  .support-buttons {
     width: 60%;
+  }
+  .form-flex{
+    flex-direction: column;
+  }
+  input[type=submit]{
+    margin-bottom: 60px;
   }
 }
 
 @media only screen and (max-width: 1060px) {
-  .countdown{
+  .countdown {
     flex-direction: column;
   }
-  .support-buttons{
+  .support-buttons {
     width: 80%;
   }
-  .koval-text {
-    padding: 60px 10%;
+
+
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-item-donate {
+    padding: 0;
   }
-  .covid{
-    padding: 5%;
+  .social{
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 815px) {
- .koval-image > img {
-   width: 600px;
- }
- .support-buttons{
-  width: 100%;
+  .support-buttons {
+    width: 100%;
+  }
 }
-
-
-}
-
 
 @media only screen and (max-width: 768px) {
-  .banner-image{
+  .banner-image {
     display: none;
   }
-  .bannermobile-image{
+  .bannermobile-image {
     display: flex;
     width: 100%;
     height: auto;
   }
-
- }
-
-
+  .koval-cares-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .koval-cares-text {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .koval-cares-list {
+    width: 100%;
+  }
+  .koval-image img {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 640px) {
-  .row{
+  .row {
     flex-direction: column;
   }
 
-  .koval-text {
-    padding: 60px 5%;
-  }
-  .koval-cares-logo > img{
+  .koval-cares-logo > img {
     width: 95%;
   }
 
   .bio {
     width: 30%;
   }
-  
+
   .koval-cares {
     width: 30%;
   }
-  
+
   .involved {
     width: 30%;
   }
 }
 
-@media only screen and (max-width: 615px) {
-  .koval-image > img {
-    width: 500px;
-  }
- }
-
- @media only screen and (max-width: 563px) {
+@media only screen and (max-width: 563px) {
   .countdown-button {
     text-align: center;
   }
- }
 
- @media only screen and (max-width: 524px) {
+}
+
+@media only screen and (max-width: 524px) {
   .timer {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 0;
   }
- }
+}
 
- @media only screen and (max-width: 500px) {
-  .koval-image > img {
-    width: 400px;
-  }
- }
-
- @media only screen and (max-width: 484px) {
+@media only screen and (max-width: 484px) {
   .timer {
     width: 70%;
- }
-
- .register-buttons{
-   flex-direction: column;
- }
-
- .register-button{
-   margin: 5% auto;
- }
-
- .covid{
-   padding: 10% 0;
- }
-
- .covid-button{
-   font-size: 18px;
- }
- 
- @media only screen and (max-width: 400px) {
-  .koval-image > img {
-    width: 310px;
   }
- }
+
+  .register-buttons {
+    flex-direction: column;
+  }
+
+  .register-button {
+    margin: 5% auto;
+  }
+}
