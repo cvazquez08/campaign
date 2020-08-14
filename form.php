@@ -10,7 +10,7 @@
   $message = $firstname . " " . $lastname . "\n " . $phonenumber .  "\n\n" . $_POST['message'];
 
 
-$to = "vazquez.chris08@gmail.com";
+$to = "koval@kovalcares.com, alexiselisav@gmail.com";
 $headers = "From: $email \r\n";
 $headers .= "Reply-To: $email \r\n";
 
