@@ -34,7 +34,7 @@ section:before{
   display: block;
 }
 
-.form-container:before, .covid:before{
+.form-container:before, .covid:before, .comments-container:before{
   height: 50px;
   content: "";
   display: block;
@@ -333,12 +333,51 @@ a.slider-atag:hover .overlay {
   transform: translate(-50%, -50%);
 }
 
+.comments-container{
+  width: 80%;
+  margin: auto;
+}
+
+.comments-slider{
+  padding-bottom: 60px;
+}
+
+.comments-slider{
+  width: 100%;
+  height: auto;
+}
+
+
+.review-title {
+  font-family: "PT Serif Caption", serif;
+  color: #51889d;
+  padding: 60px 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.comments-container > .slick-prev:before,
+ .slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .chris-cares-subtext {
   width: 70%;
   margin: auto;
   font-family: "Karla", sans-serif;
   color: white;
 }
+
+
 
 .support {
   background: url("images/miramar_aerial.jpg");
@@ -665,6 +704,10 @@ input[type="submit"]:hover {
   .koval-image img {
     width: 100%;
   }
+  .comments-container{
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -713,5 +756,11 @@ input[type="submit"]:hover {
 
   .register-button {
     margin: 5% auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .comments-container img{
+  max-width: 320px;  
   }
 }

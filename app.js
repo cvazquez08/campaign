@@ -17,6 +17,17 @@ $(".variable").slick({
 
 });
 
+$(".comments-slider").slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3500,
+  centerMode: true,
+  speed: 300,
+  variableWidth: true,
+  pauseOnHover:false,
+  pauseOnFocus:false
+});
+
 
 
 const second = 1000,
