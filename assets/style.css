@@ -96,7 +96,7 @@ section:before{
   color: #3b5998;
 }
 
-/* Modal 
+/* Modal  */
 
 .modal {
   display: block;
@@ -117,7 +117,7 @@ section:before{
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .open {
@@ -143,7 +143,7 @@ section:before{
   text-align: center;
 
 }
-*/
+
 
 /* Meet Chris */
 
