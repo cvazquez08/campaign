@@ -1,4 +1,4 @@
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("myPopup");
 let span = document.getElementsByClassName("close")[0];
 
 span.onclick = function(){
@@ -15,7 +15,6 @@ $(".variable").slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  centerMode: true,
   variableWidth: true,
   responsive: [
     {
